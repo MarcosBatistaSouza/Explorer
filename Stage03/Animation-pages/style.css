@@ -1,0 +1,150 @@
+:root{
+--Epilogue: 'Epilogue', sans-serif;
+
+--back-color: #28293E;
+--font-color: #ffffff;
+--font2-color: #BBB3E5;
+--font3-color: #090039;
+
+font-size: 62.5%;
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: var(--back-color);
+}
+
+main{
+  display: grid;
+  gap:3.2rem;
+}
+
+.page{
+  max-width: 33.0rem;
+  margin: auto;
+}
+
+
+.card{
+  position: relative;
+}
+
+img{
+  width: 100%;
+  height: auto;
+}
+
+p{
+  font-family: var(--Epilogue);
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 3.2rem;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--font2-color);
+  margin-bottom: 1.7rem;
+  margin-top: 10rem;
+}
+
+h1{
+  font-family: var(--Epilogue);
+  font-weight: 800;
+  font-size: 4.0rem;
+  line-height: 4.8rem;
+  text-align: center;
+  color: var(--font-color);
+  margin-bottom: 8rem;
+}
+
+h2{
+  font-family: var(--Epilogue);
+  font-weight: 800;
+  font-size: 4.0rem;
+  line-height: 4.8rem;
+  color: var(--font-color);
+}
+
+span{
+  font-family: var(--Epilogue);
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 3.2rem;
+  columns: var(--font3-color);
+  border-radius: 19px;
+  background: var(--font-color);
+  color: var(--font3-color);
+  padding: 0.5rem 1.5rem;
+  height: 3.8rem;
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  border: 1px solid gray;
+}
+
+.card img{
+  height: 41.6rem;
+  object-fit: cover;
+  border-radius: 6px;
+  transition: transform 200ms;
+  filter: brightness(0.5);
+}
+
+.card img:hover{
+  transform: scale(1.1);
+  filter: brightness(1);
+}
+
+.card h2{
+  position: absolute;
+  bottom: 5.2rem;
+  left: 2.8rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2.8rem;
+}
+
+@media(min-width:700px){
+  .page{
+    max-width: 117rem;
+    padding: 5rem;
+  }
+
+  main{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media(min-width:900px){
+  h1{
+  font-size: 5.6rem;
+  } 
+  
+  main{
+    grid-template-areas: "A B B"
+    "C C D";
+  }
+
+  main div:nth-child(1){
+    grid-area: A;
+  }
+
+  main div:nth-child(2){
+    grid-area: B;
+  }
+
+  main div:nth-child(3){
+    grid-area: C;
+  }
+
+  main div:nth-child(4){
+    grid-area: D;
+  }
+}

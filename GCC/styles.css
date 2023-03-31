@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Nunito", sans-serif;
+}
+
+#home{
+    background-color: #F15156;
+    height: 100vh;
+}
+
+header{
+    background-color: #E44449;
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content{
+    margin: 52px 20px;
+}
+
+.content img + img{
+    margin-left: -15px;
+}
+
+span{
+    
+}

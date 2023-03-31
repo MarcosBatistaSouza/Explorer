@@ -1,0 +1,97 @@
+:root{
+    --pink: #EE24FF;
+    --dark-blue: #3F3D56;
+    --gray: #828282;
+    --white: #ECEFF2;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0 auto;
+}
+
+main{
+    margin: 60px auto;
+    max-width: 630px;
+}
+
+div{
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+h1{
+    font-family: 'Dosis';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+
+    color: var(--gray);
+    margin-bottom: 16px;
+}
+
+h1 span{
+    color: var(--pink);
+}
+
+p{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+
+    text-align: center;
+    color: var(--gray);
+    max-width: 540px;
+    margin: auto;
+}
+
+strong{
+    font-weight: 700;
+    color: var(--dark-blue);
+}
+
+p + p{
+    margin-top: 32px;
+}
+
+p span{
+    color: var(--gray);
+    font-weight: 700;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 42px;
+    margin-bottom: 40px;
+}
+
+ul li{
+    list-style: none;
+}
+
+ul li a{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 147.68%;
+
+    text-align: center;
+    text-decoration: none;
+
+    color: var(--dark-blue);
+}
+
+footer img{
+    width: 100%;
+}
