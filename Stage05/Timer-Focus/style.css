@@ -1,0 +1,64 @@
+:root{
+    font-size: 62.5%;
+    --Font1: 'Roboto', sans-serif;
+
+    --bg-color: #121214;
+    --bg-buttons:rgba(66, 211, 255, 0.13);
+    --text-color:#ffff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--Font1);
+
+    display: grid;
+    min-height: 100vh;
+}
+
+main{
+    justify-self: center;
+    align-self: end;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.hide{
+    display: none;
+}
+
+.timer{
+    font-size: 8.8rem;
+    font-weight: 700;
+    line-height: 10.3rem;
+    display: flex;
+
+    margin-bottom: 1.6rem;
+}
+
+.buttons{
+    background-color: var(--bg-buttons);
+    width: fit-content;
+    border-radius: 1000rem;
+    padding: 2.2rem 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3.2rem;
+}
+
+footer{
+    justify-self: end;
+    align-self: end;
+
+    padding: 0 4rem 3.2rem 0;
+}
