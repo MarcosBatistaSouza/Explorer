@@ -9,3 +9,6 @@ Fundamentos da Web
 - Protocolo HTTP
 - O que é Frontend e Backend e suas diferenças
 - Seletores CSS
+
+## 🛠 Tecnologias
+ * Não foram realizados projetos práticos durante esse stage.
